@@ -4,7 +4,7 @@ class Solution {
         if(n==1)
             return true; 
         int max=0;
-        for(int index=0;index<n-1 && max>=index ;index++)
+        for(int index=0;index<n && max>=index ;index++)
         {
             if(max<index+nums[index]){
                 max=index+nums[index];
