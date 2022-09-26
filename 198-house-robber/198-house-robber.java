@@ -9,7 +9,7 @@ class Solution {
         dp[0]=nums[0];
         dp[1]=Integer.max(nums[1],nums[0]);
         for(int i=2;i<n ; i++){
-            dp[i]=Integer.max(nums[i] + dp[i-2], dp[i-1]);
+            dp[i]=Math.max(nums[i] + dp[i-2], dp[i-1]);
         }
         return dp[n-1];
     }
